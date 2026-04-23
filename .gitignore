@@ -1,0 +1,16 @@
+# Python
+__pycache__/
+*.pyc
+
+# Virtual envs
+venv/
+my-env/
+
+# Vector DB
+chroma_db/
+
+# OS junk
+.DS_Store
+
+# Secrets
+.env

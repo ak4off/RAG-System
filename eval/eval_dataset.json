@@ -1,0 +1,52 @@
+[
+  {
+    "question": "What does CTC stand for and what problem does it solve?",
+    "ground_truth": "CTC stands for Connectionist Temporal Classification. It solves the alignment problem between input audio frames and output tokens, removing the need for frame-level labels.",
+    "source_doc": "asr_overview.md"
+  },
+  {
+    "question": "What is the formula for Word Error Rate?",
+    "ground_truth": "WER = (S + D + I) / N, where S is substitutions, D is deletions, I is insertions, and N is the total number of words in the reference.",
+    "source_doc": "asr_overview.md"
+  },
+  {
+    "question": "What is the E-Branchformer encoder?",
+    "ground_truth": "The E-Branchformer combines local and global context via a parallel convolution and attention branch.",
+    "source_doc": "asr_overview.md"
+  },
+  {
+    "question": "Why is CER preferred over WER for Tamil?",
+    "ground_truth": "CER is preferred for languages without clear word boundaries or with complex morphology, such as Tamil.",
+    "source_doc": "asr_overview.md"
+  },
+  {
+    "question": "What is Real-Time Factor and what does RTF < 1 mean?",
+    "ground_truth": "RTF is the ratio of processing time to audio duration. RTF < 1 means the system runs faster than real-time.",
+    "source_doc": "asr_overview.md"
+  },
+  {
+    "question": "How does sliding window chunking work for long audio?",
+    "ground_truth": "The audio is divided into overlapping chunks (e.g. 30s windows with 5s overlap), each processed independently, then outputs are concatenated using the overlap to remove duplicates.",
+    "source_doc": "asr_overview.md"
+  },
+  {
+    "question": "What is the role of text_prev in encoder-decoder ASR?",
+    "ground_truth": "text_prev is the text prefix from the previous window, passed to the decoder as context to avoid seam artifacts at chunk boundaries.",
+    "source_doc": "asr_overview.md"
+  },
+  {
+    "question": "What does VAD do in a production ASR pipeline?",
+    "ground_truth": "VAD (Voice Activity Detection) avoids processing silent segments, reducing latency and hallucinations.",
+    "source_doc": "asr_overview.md"
+  },
+  {
+    "question": "What interface is required to load the e_branchformer_ctc encoder in ESPnet?",
+    "ground_truth": "Only Speech2TextGreedySearch can load the e_branchformer_ctc encoder.",
+    "source_doc": "asr_overview.md"
+  },
+  {
+    "question": "What is OWSM?",
+    "ground_truth": "OWSM stands for Open Whisper-style Speech Models, a family of models trained on large multilingual corpora following the Whisper training recipe.",
+    "source_doc": "asr_overview.md"
+  }
+]

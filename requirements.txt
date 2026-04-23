@@ -1,0 +1,30 @@
+# Core
+anthropic
+langchain
+langchain-community
+langchain-text-splitters
+
+# Document loaders
+pypdf
+unstructured
+
+# Vector store
+chromadb
+
+# Embeddings
+sentence-transformers
+
+# Token counting
+tiktoken
+
+# Phase 2: hybrid retrieval + reranking
+rank-bm25
+cohere  # optional; can use sentence-transformers reranker instead
+
+# Phase 2: config
+pyyaml
+
+# Phase 3: evaluation
+ragas
+datasets
+pandas
